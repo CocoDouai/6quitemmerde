@@ -1,0 +1,377 @@
+TRUNCATE `CARTE`;
+TRUNCATE `CARTE_JOUEE`;
+TRUNCATE `DEFAUSSE`;
+TRUNCATE `INVITATION`;
+TRUNCATE `JOUEUR`;
+TRUNCATE `MAIN`;
+TRUNCATE `MANCHE`;
+TRUNCATE `PARTIE`;
+TRUNCATE `RANGEE`;
+TRUNCATE `REGLE`;
+TRUNCATE `REJOINDRE`;
+TRUNCATE `TOUR`;
+
+/*==============================================================*/
+/* Table : REGLE                                                */
+/*==============================================================*/
+
+INSERT INTO `REGLE`(`ID_REGLE`, `LIBELLE`, `NB_JOUEURS`, `NB_CARTES_MAIN`, `NB_RANGEES`, `NB_CARTES_RANGEE`, `SCORE_FIN_PARTIE`, `VARIANTE_PRO`) VALUES
+(1, 'default', 4,10,4,5,66,0);
+
+/*==============================================================*/
+/* Création des CARTEs du jeux                                  */
+/*==============================================================*/
+
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('1', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('2', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('3', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('4', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('5', '2');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('6', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('7', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('8', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('9', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('10', '3');
+
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('11', '5');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('12', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('13', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('14', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('15', '2');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('16', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('17', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('18', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('19', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('20', '3');
+
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('21', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('22', '5');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('23', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('24', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('25', '2');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('26', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('27', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('28', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('29', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('30', '3');
+
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('31', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('32', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('33', '5');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('34', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('35', '2');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('36', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('37', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('38', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('39', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('40', '3');
+
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('41', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('42', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('43', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('44', '5');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('45', '2');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('46', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('47', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('48', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('49', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('50', '3');
+
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('51', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('52', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('53', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('54', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('55', '6');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('56', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('57', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('58', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('59', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('60', '3');
+
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('61', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('62', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('63', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('64', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('65', '2');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('66', '5');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('67', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('68', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('69', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('70', '3');
+
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('71', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('72', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('73', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('74', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('75', '2');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('76', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('77', '5');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('78', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('79', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('80', '3');
+
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('81', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('82', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('83', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('84', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('85', '2');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('86', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('87', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('88', '5');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('89', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('90', '3');
+
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('91', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('92', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('93', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('94', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('95', '2');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('96', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('97', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('98', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('99', '5');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('100', '3');
+
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('101', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('102', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('103', '1');
+INSERT INTO `CARTE` (`ID_CARTE`, `MALUS`) VALUES ('104', '1');
+
+/*==============================================================*/
+/* Création de JOUEUR test                                      */
+/*==============================================================*/
+
+
+INSERT INTO `JOUEUR` (`PSEUDO`, `ADRESSE_MEL`, `PARTIES_GAGNEES`, `NB_PARTIES_JOUEE`, `MDP`, `SCORE_GENERAL`, `ID_JOUEUR`) VALUES 
+('Jar Jar Bings', 'jar.jar.bings@LaMenaceFantome.com', '0', '324', 'JeSuisUnSith', '0', 1),
+('Boba Fett', 'boba.fett@LEmpireContre-attaque.com', '2', '5', 'boba', '345252', 2),
+('Dark Maul', 'dark.maul@LaMenaceFantome.com', '33', '25', 'darky', '4546', 3),
+('Dark Plagueis', 'dark.plagueis@StarWars.com', '0', '0', 'Hego Damask', '0', 4),
+('Chewbacca', 'Chewbacca@LEmpireContre-attaque.com', '24', '45', 'Chewie', '2576', 5),
+('Comte Dooku', 'Comte.dooku@LAttaqueDesClones.com', '67', '38', 'Dark Tyranus', '934', 6),
+('Jabba le Hutt', 'jabba.le.hutts@UnNouvelEspoir.com', '355', '265', 'jabba', '7563', 7),
+('Plo Koon', 'plo.koon@LaMenaceFantome.com', '76', '98', 'PLO', '7563', 8),
+('général Grievous', 'grievous@LaRevancheDesSith.com', '93', '83', 'GriGri', '17493', 9),
+('Kit Fisto', 'kit.fisto@LAttaqueDesClones.com', '23', '15', 'kit', '2455', 10);
+
+
+/*==============================================================*/
+/* Création de PARTIE test                                      */
+/*==============================================================*/
+
+INSERT INTO `PARTIE`(`ID_PARTIE`, `ID_CREATEUR`, `DEMARRER`,  `TERMINER`, `ID_REGLE`, `PARTIE_PUBLIQUE`) VALUES 
+(1,1,true,false,1,false),
+(2,1,false,true,1,false),
+(3,2,true,false,1,true);
+
+
+/*==============================================================*/
+/* création des INVITATIONs pour REJOINDRE la PARTIE test       */
+/*==============================================================*/
+
+INSERT INTO `INVITATION`(`ID_JOUEUR`, `ID_PARTIE`, `ACCEPTE`,`REFUSE`) VALUES
+(1,2,true,false),
+(2,2,false,false),
+(3,2,false,false),
+(5,2,true,false),
+(6,2,false,false),
+(8,2,true,false),
+(10,2,false,true);
+
+
+/*==============================================================*/
+/* Les JOUEURs ayant rejoints les 2 PARTIEs tests               */
+/*==============================================================*/
+
+INSERT INTO `REJOINDRE`(`ID_JOUEUR`, `ID_PARTIE`, `SCORE`) VALUES
+(1,1,46),
+(3,1,70),
+(5,1,14),
+(10,1,35);
+INSERT INTO `REJOINDRE`(`ID_JOUEUR`, `ID_PARTIE`, `SCORE`) VALUES
+(3,3,0),
+(4,3,0),
+(6,3,0),
+(9,3,0);
+
+
+/****************************/
+/**********MANCHE 1**********/
+/****************************/
+INSERT INTO `MANCHE`(`ID_PARTIE`, `NUMERO_MANCHE`) VALUES (3,1);
+
+/****Initialisation*/
+/*MAIN du JOUEUR 1*/
+INSERT INTO `MAIN`(`ID_MAIN`, `ID_JOUEUR`, `ID_PARTIE`, `NUMERO_MANCHE`, `ID_CARTE`) VALUES 
+(1,3,3,1,6),
+(2,3,3,1,36),
+(3,3,3,1,40),
+(4,3,3,1,48),
+(5,3,3,1,53),
+(6,3,3,1,76),
+(7,3,3,1,82),
+(8,3,3,1,89),
+(9,3,3,1,100),
+(10,3,3,1,102);
+
+/*MAIN du JOUEUR 2*/
+INSERT INTO `MAIN`(`ID_MAIN`, `ID_JOUEUR`, `ID_PARTIE`, `NUMERO_MANCHE`, `ID_CARTE`) VALUES 
+(11,4,3,1,1),
+(12,4,3,1,7),
+(13,4,3,1,11),
+(14,4,3,1,12),
+(15,4,3,1,17),
+(16,4,3,1,25),
+(17,4,3,1,28),
+(18,4,3,1,57),
+(19,4,3,1,64),
+(20,4,3,1,74);
+
+/*MAIN du JOUEUR 3*/
+INSERT INTO `MAIN`(`ID_MAIN`, `ID_JOUEUR`, `ID_PARTIE`, `NUMERO_MANCHE`, `ID_CARTE`) VALUES 
+(21,6,3,1,3),
+(22,6,3,1,9),
+(23,6,3,1,32),
+(24,6,3,1,38),
+(25,6,3,1,50),
+(26,6,3,1,61),
+(27,6,3,1,88),
+(28,6,3,1,90),
+(29,6,3,1,98),
+(30,6,3,1,99);
+
+/*MAIN du JOUEUR 4*/
+INSERT INTO `MAIN`(`ID_MAIN`, `ID_JOUEUR`, `ID_PARTIE`, `NUMERO_MANCHE`, `ID_CARTE`) VALUES 
+(31,9,3,1,3),
+(32,9,3,1,9),
+(33,9,3,1,32),
+(34,9,3,1,38),
+(35,9,3,1,50),
+(36,9,3,1,61),
+(37,9,3,1,88),
+(38,9,3,1,90),
+(39,9,3,1,98),
+(40,9,3,1,99);
+
+/*Initialisation RANGEE*/
+INSERT INTO `RANGEE`(`ID_CARTE`, `ID_PARTIE`, `NUMERO_MANCHE`, `NUMERO_RANGEE`) VALUES
+(14,3,1,1),
+(27,3,1,2),
+(34,3,1,3),
+(38,3,1,4);
+
+/****TOUR 1*/
+INSERT INTO `TOUR`(`ID_PARTIE`, `NUMERO_MANCHE`, `NUMERO_TOUR`) VALUES (3,1,1);
+
+INSERT INTO `CARTE_JOUEE` (`ID_CARTE`, `ID_JOUEUR`, `ID_PARTIE`, `NUMERO_MANCHE`, `NUMERO_TOUR`) VALUES 
+(48,3,3,1,1),
+(28,4,3,1,1),
+(61,6,3,1,1),
+(77,9,3,1,1);
+
+/*retire les CARTEs jouaient des MAIN des JOUEURs*/
+DELETE FROM `MAIN` WHERE `ID_JOUEUR` = 3 AND `ID_PARTIE` = 3 AND `NUMERO_MANCHE` = 1 AND `ID_CARTE`=48;
+DELETE FROM `MAIN` WHERE `ID_JOUEUR` = 4 AND `ID_PARTIE` = 3 AND `NUMERO_MANCHE` = 1 AND `ID_CARTE`=28;
+DELETE FROM `MAIN` WHERE `ID_JOUEUR` = 6 AND `ID_PARTIE` = 3 AND `NUMERO_MANCHE` = 1 AND `ID_CARTE`=61;
+DELETE FROM `MAIN` WHERE `ID_JOUEUR` = 9 AND `ID_PARTIE` = 3 AND `NUMERO_MANCHE` = 1 AND `ID_CARTE`=77;
+
+/*ajoute ces CARTEs au rangées*/
+INSERT INTO `RANGEE`(`ID_CARTE`, `ID_PARTIE`, `NUMERO_MANCHE`, `NUMERO_RANGEE`) VALUES
+(28,3,1,2),
+(48,3,1,4),
+(61,3,1,4),
+(77,3,1,4);
+
+
+/****TOUR 2*/
+INSERT INTO `TOUR`(`ID_PARTIE`, `NUMERO_MANCHE`, `NUMERO_TOUR`) VALUES (3,1,2);
+
+INSERT INTO `CARTE_JOUEE` (`ID_CARTE`, `ID_JOUEUR`, `ID_PARTIE`, `NUMERO_MANCHE`, `NUMERO_TOUR`) VALUES 
+(40,3,3,1,2),
+(64,4,3,1,2),
+(32,6,3,1,2),
+(65,9,3,1,2);
+
+DELETE FROM `MAIN` WHERE `ID_JOUEUR` = 3 AND `ID_PARTIE` = 3 AND `NUMERO_MANCHE` = 1 AND `ID_CARTE`=40;
+DELETE FROM `MAIN` WHERE `ID_JOUEUR` = 4 AND `ID_PARTIE` = 3 AND `NUMERO_MANCHE` = 1 AND `ID_CARTE`=64;
+DELETE FROM `MAIN` WHERE `ID_JOUEUR` = 6 AND `ID_PARTIE` = 3 AND `NUMERO_MANCHE` = 1 AND `ID_CARTE`=32;
+DELETE FROM `MAIN` WHERE `ID_JOUEUR` = 9 AND `ID_PARTIE` = 3 AND `NUMERO_MANCHE` = 1 AND `ID_CARTE`=65;
+
+INSERT INTO `RANGEE`(`ID_CARTE`, `ID_PARTIE`, `NUMERO_MANCHE`, `NUMERO_RANGEE`) VALUES
+(32,3,1,2),
+(40,3,1,3),
+(64,3,1,3),
+(65,3,1,3);
+
+/****TOUR 3*/
+INSERT INTO `TOUR`(`ID_PARTIE`, `NUMERO_MANCHE`, `NUMERO_TOUR`) VALUES (3,1,3);
+
+INSERT INTO `CARTE_JOUEE` (`ID_CARTE`, `ID_JOUEUR`, `ID_PARTIE`, `NUMERO_MANCHE`, `NUMERO_TOUR`) VALUES 
+(89,3,3,1,3),
+(17,4,3,1,3),
+(90,6,3,1,3),
+(78,9,3,1,3);
+
+DELETE FROM `MAIN` WHERE `ID_JOUEUR` = 3 AND `ID_PARTIE` = 3 AND `NUMERO_MANCHE` = 1 AND `ID_CARTE`=89;
+DELETE FROM `MAIN` WHERE `ID_JOUEUR` = 4 AND `ID_PARTIE` = 3 AND `NUMERO_MANCHE` = 1 AND `ID_CARTE`=17;
+DELETE FROM `MAIN` WHERE `ID_JOUEUR` = 6 AND `ID_PARTIE` = 3 AND `NUMERO_MANCHE` = 1 AND `ID_CARTE`=90;
+DELETE FROM `MAIN` WHERE `ID_JOUEUR` = 9 AND `ID_PARTIE` = 3 AND `NUMERO_MANCHE` = 1 AND `ID_CARTE`=78;
+
+INSERT INTO `RANGEE`(`ID_CARTE`, `ID_PARTIE`, `NUMERO_MANCHE`, `NUMERO_RANGEE`) VALUES
+(17,3,1,1),
+(78,3,1,4);
+
+
+/*La RANGEE 4 et pleinne et le JOUEUR 3 veut y ajouter une CARTE */
+/*on lui ajoute les CARTEs à sa défausse*/
+-- 
+INSERT INTO `DEFAUSSE`(`ID_JOUEUR`,`ID_PARTIE`,`NUMERO_MANCHE`,`ID_CARTE`) 
+SELECT * FROM
+(SELECT 3 AS `ID_JOUEUR`) AS A JOIN
+(SELECT `ID_PARTIE`, `NUMERO_MANCHE`, `ID_CARTE` FROM `RANGEE` WHERE `NUMERO_RANGEE`=4 AND `ID_PARTIE` = 3 AND `NUMERO_MANCHE` = 1) AS B;
+
+/*on retire les CARTE de la RANGEE 4*/
+DELETE FROM `RANGEE` WHERE `NUMERO_RANGEE`=4;
+
+/*On ajoute le score au JOUEUR */
+
+UPDATE `REJOINDRE`, 
+(SELECT `ID_JOUEUR`, SUM(`MALUS`) AS calculScore 
+FROM(
+    (SELECT `ID_JOUEUR`, `ID_CARTE`  FROM `DEFAUSSE` WHERE `ID_PARTIE`=3 AND `NUMERO_MANCHE`=1) AS A 
+    JOIN `CARTE` AS B 
+    ON A.`ID_CARTE`=B.`ID_CARTE`
+) 
+GROUP BY `ID_JOUEUR`) AS C
+SET `score` = C.`calculScore`
+WHERE C.`ID_JOUEUR` = `REJOINDRE`.`ID_JOUEUR` AND `ID_PARTIE`=3;
+
+INSERT INTO `RANGEE`(`ID_CARTE`, `ID_PARTIE`, `NUMERO_MANCHE`, `NUMERO_RANGEE`) VALUES
+(89,3,1,4),
+(90,3,1,4);
+
+
+
+SELECT `ID_JOUEUR`, COALESCE(SUM(`MALUS`),0) AS score, `ID_PARTIE`
+FROM(
+    
+    (SELECT B.`ID_JOUEUR`, A.`ID_CARTE`, B.`ID_PARTIE` 
+     FROM(
+         (SELECT `ID_JOUEUR`, `ID_CARTE`,`ID_PARTIE` 
+          FROM `DEFAUSSE` 
+          WHERE `DEFAUSSE`.`ID_PARTIE`=3
+         ) AS A 
+         RIGHT JOIN (SELECT `ID_JOUEUR`, `ID_PARTIE` 
+                     FROM `REJOINDRE` 
+                     WHERE `REJOINDRE`.`ID_PARTIE`=3
+                    ) AS B
+         ON A.`ID_JOUEUR`=B.`ID_JOUEUR` 
+     )
+    ) AS C 
+    
+    LEFT JOIN `CARTE` AS D
+    
+    ON C.`ID_CARTE`=D.`ID_CARTE`
+    
+)
+GROUP BY `ID_JOUEUR`,`ID_PARTIE`

@@ -1,0 +1,26 @@
+/*#landing-content {
+  display:block;
+  overflow: hidden;
+  background-image: url('./image/fond.jpg');
+  width: 120%;
+  height: 120%;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  /*filter: brightness(0.2);*/
+/*}*/
+
+#acceder {
+  margin-right: 30px;
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 10px;
+
+  padding-left: 30px;
+  border: 0px;
+}

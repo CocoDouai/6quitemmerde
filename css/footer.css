@@ -1,0 +1,34 @@
+footer img {
+  width: 20%;
+  margin-left: 10%;
+}
+
+footer a {
+  margin-left: 45%;
+}
+
+footer p {
+  text-align: center;
+}
+
+.upfooter {
+  display: inline-block;
+  width: 100%;
+  height: 10%;
+  /*border: 3px solid #345d5c;*/
+  /*margin-left: 5%;*/
+  background-color: #69b7ff;
+}
+
+.upfooter h1 {
+  text-align: center;
+}
+
+.downfooter {
+  display: inline-block;
+  width: 100%;
+  height: 10%;
+  background-color: #969696;
+  /*margin-left: 5%;*/
+  /*border: 3px solid #64e6e0;*/
+}
